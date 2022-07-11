@@ -2,10 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: green solid;
+
 }
 html,body{
     height: 100%;
     width: 100%;
+    line-height: 1.6;
 }
 li{
     padding: 0;
@@ -18,4 +21,66 @@ ul{
 img{
     height: auto;
     max-width: 100%;
+}
+/* NAV */
+header{
+    background-color: gray;
+    margin-bottom: 30px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: gray;
+}
+.header__img{
+   font-size: 1.5em;
+   color: black;
+}
+.nav__list{
+    display: flex;
+    gap: 20px;
+}
+/* MAIN */
+.main__greeting{
+    background-color: gray;
+    display: flex;
+    outline: solid red;
+    justify-content: space-around;
+    padding: 50px;
+    text-align: center;
+
+}
+
+.main__greetingText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    flex-grow: 0;
+    padding: 100px;
+    text-align: left;
+}
+.main__greetingImg{
+    position: relative;
+}
+.main__greetingButton{
+margin-top: 10px;
+}
+
+/* team Members */
+
+.meetTheTeam__container{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 100px;
+;
+}
+.teamMember{
+padding: 20px;
+}
+main h2{
+    text-align: center;
 }
