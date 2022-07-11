@@ -21,22 +21,17 @@ ul{
 img{
     height: auto;
     max-width: 100%;
+    display: block;
 }
 /* NAV */
-header{
-    background-color: gray;
-    margin-bottom: 30px;
-}
+
 nav{
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
     background-color: gray;
 }
-.header__img{
-   font-size: 2em;
-   color: black;
-}
+
 .nav__list{
     display: flex;
     gap: 20px;
@@ -45,31 +40,39 @@ nav{
     font-size: 1.2em;
     text-decoration: none;
 }
+
+/* Header */
+header{
+    background-color: gray;
+    margin-bottom: 30px;
+}
+.header__img{
+    font-size: 2em;
+    color: black;
+ }
 /* MAIN */
 .main__greeting{
     background-color: gray;
     display: flex;
-    outline: solid red;
     justify-content: space-around;
-    padding: 50px 200px;
-    text-align: center;
+    align-items: center;
+    padding: 50px 60px;
+
 
 }
 
 .main__greetingText{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    padding: 50px;
-    flex-grow: 0;
     padding: 100px;
     text-align: left;
+    justify-content: end;
+   
 }
 
-.greeting__Img{
-    position: relative;
-}
+
 .main__greetingButton{
 margin-top: 10px;
 }
@@ -142,8 +145,10 @@ footer{
     text-align: center;
 }
 /* Mobile Design */
-@media (max-width:450px){
-  
+@media (max-width:500px){
+  *{
+    padding: 0;
+  }
     
     .header__img{
         font-size: 1.2em;
@@ -155,7 +160,14 @@ footer{
     .main__greeting{
         outline: solid blue;
         padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     
+    }
+    .main__greetingText{
+        text-align: center;
+        align-items: center;
     }
 
 }
