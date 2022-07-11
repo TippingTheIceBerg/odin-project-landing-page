@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: solid green;
+
 
 }
 html,body{
@@ -34,12 +34,16 @@ nav{
     background-color: gray;
 }
 .header__img{
-   font-size: 1.5em;
+   font-size: 2em;
    color: black;
 }
 .nav__list{
     display: flex;
     gap: 20px;
+}
+.nav__link {
+    font-size: 1.2em;
+    text-decoration: none;
 }
 /* MAIN */
 .main__greeting{
@@ -136,4 +140,22 @@ footer{
 }
 .footer__text{
     text-align: center;
+}
+/* Mobile Design */
+@media (max-width:450px){
+  
+    
+    .header__img{
+        font-size: 1.2em;
+
+     }
+    .nav__link{
+        font-size: .9em;
+    }
+    .main__greeting{
+        outline: solid blue;
+        padding: 0;
+    
+    }
+
 }
