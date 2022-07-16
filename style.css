@@ -237,6 +237,17 @@ footer{
         padding: 20px;
         font-size: 1.6em;
     }
+    .main__callToAction{
+        padding: 50px;
+    }
+      .callToAction__container{
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        height: 350px;
+        text-align: center;
+     
+    }
 }
 @media (max-width:500px){
 
@@ -278,11 +289,11 @@ footer{
     }
     /* Quote */
     .main__quote p{
-       
+
         font-size: 1.4em;
         padding: 40px;
-       
     
     }
 
+    
 }
