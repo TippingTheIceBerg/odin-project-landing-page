@@ -21,7 +21,6 @@ ul{
 img{
     height: auto;
     max-width: 100%;
-    display: block;
 }
 /* NAV */
 
@@ -69,13 +68,26 @@ header{
     padding: 100px;
     text-align: left;
     justify-content: end;
-   
+}
+.greeting__Img{
+    border-radius: 50px;
+}
+.greetingText__header{
+    font-size: 2.5em;
+}
+.greetingText__paragraph{
+    font-size: 1.2em;
 }
 
-
-.main__greetingButton{
-margin-top: 10px;
+.greetingText__button{
+    margin-top:10px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: .9em;
+    font-weight: 600;
 }
+
 
 /* team Members */
 
