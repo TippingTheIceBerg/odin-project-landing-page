@@ -14,6 +14,7 @@ html,body{
 }
 :root{
     --primaryColor: #68b6da;
+    --darkerPrimColor:#044b94;
     --black:#0f253c;
     --white:#eee;
     --accent: #FF9F30;
@@ -40,10 +41,22 @@ nav{
     padding: 10px 0;
     background-color: var(--black);
 }
+.logo__container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.logo__container p{
+    font-size: 1.2em;
+}
 .logo__img{
     font-size: 2em;
     color: var(--primaryColor);
-
+    transition: color linear .2s;
+ }
+ .logo__img:hover{
+    color: var(--accent);
  }
 
 .nav__list{
@@ -54,6 +67,10 @@ nav{
     font-size: 1.2em;
     text-decoration: none;
     color:var(--primaryColor);
+    transition: color linear .2s;
+}
+.nav__link:hover{
+    color: var(--accent);
 }
 
 /* Header */
@@ -90,21 +107,19 @@ header{
 .greetingText__paragraph{
     font-size: 1.2em;
 }
-
-.greetingText__button{
-    margin-top:10px;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: .9em;
-    font-weight: 600;
+.greeting__button{
+    margin-top: 20px;
 }
+
+
 
 
 /* team Members */
 main h2{
     text-align: center;
     margin-bottom: 20px;
+    color: var(--darkerPrimColor);
+
 }
 
 .meetTheTeam__container{
@@ -112,7 +127,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 10px 100px 50px 100px;
-;
 }
 .teamMember{
 padding: 20px;
@@ -120,6 +134,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+color: var(--darkerPrimColor);
 
 }
 .teamMember__img{
@@ -178,7 +193,7 @@ align-items: center;
 
 
 /* buttons */
-.greetingText__button,.callToAction__button{
+.callToAction__button{
     background-color: transparent;
     border: none;
     outline: none;
@@ -189,23 +204,16 @@ align-items: center;
     font-size: 1.1em;
     font-weight: 600;
     cursor: pointer;
-    position: relative;
-    transition: all linear .2s;
+    transition: color linear .2s;
+ 
 } 
-.greetingText__button::after,.callToAction__button::after{
-    content: "";
-    position: absolute;
-    background-color: white;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+.callToAction__button:hover{
+  
+    color: var(--primaryColor);
 }
 
-.greetingText__button:hover,.callToAction__button:hover{
-    color: var(--primaryColor);
-    border: solid wheat;
-}
+
+
 
 
 /* footer */

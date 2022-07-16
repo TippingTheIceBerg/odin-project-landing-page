@@ -10,7 +10,12 @@
 </head>
 <body>
     <nav>
-        <i class="fa-solid fa-chart-simple logo__img"></i>
+        <div class="logo__container">
+            <a href="#">
+                <i class="fa-solid fa-chart-simple logo__img"></i>
+            </a>
+            <p>Business</p>
+        </div>
         <ul class="nav__list">
             <li class="nav__item"><a href="#" class="nav__link">Header link one</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Header link two</a></li>
@@ -22,7 +27,9 @@
             <div class="main__greetingText">
                 <h1 class="greetingText__header">This Website is awesome.</h1>
                 <p class="greetingText__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rem, amet ea sit voluptatibus harum eligendi tenetur placeat omnis natus!</p>
-                <input class="greetingText__button" type="button" value="Sign up">
+                <div class="button__container">
+                    <input class="callToAction__button greeting__button" type="button" value="Sign Up">
+                </div>
             </div>
             <div class="main__greetingImgContainer">
                 <img class="greeting__Img" src="./images/headerImg.jpg" alt="placeholder image">
@@ -57,8 +64,8 @@
                     <h3>Call To action! It's Time</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div>
-                    <input class="callToAction__button" type="button" value="Sign Up!">
+                <div class="button__container">
+                    <input class="callToAction__button" type="button" value="Sign Up">
                 </div>
             </div>
         </div>
