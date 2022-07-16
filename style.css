@@ -232,8 +232,11 @@ footer{
 @media (max-width:800px){
     .main__greetingText{
         padding: 20px;
-
 }
+    .main__quote p{
+        padding: 20px;
+        font-size: 1.6em;
+    }
 }
 @media (max-width:500px){
 
@@ -272,6 +275,14 @@ footer{
     /* team Member Mobile */
     .meetTheTeam__container{
         flex-direction: column;
+    }
+    /* Quote */
+    .main__quote p{
+       
+        font-size: 1.4em;
+        padding: 40px;
+       
+    
     }
 
 }
